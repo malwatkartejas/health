@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+    
+    <title>Health Care Center </title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="trapezoid">
+              <a href="index.html" >Home</a>
+              <a href="about.html" >About</a>
+              <a href="contact.html" id="select" >Contact</a>
+            </div>
+          </nav>
+    </header>
+    <main >
+        <div class="containerBg"></div>
+        <div class="container">
+            <h2>BOOK YOUR VISIT</h2>
+            <div class="sections">
+            <div class="section sec1" id="sec1">
+                <h3>Basic Details</h3>
+                <label for="name" class="trn">Enter Full Name</label>
+                <input type="text" id="name" required>
+                <label for="dob" class="trn">Date of Birth</label>
+                <input type="date" name="dob" id="dob" required>
+                <label for="gender">Gender</label>
+                <div class="genderoptions" id="gender">
+                    <span><input type="radio" name="gender" id="male" value="Male"> 
+                        <label for="male">Male</label></span>
+                    <span><input type="radio" name="gender" id="female" > 
+                        <label for="female">Female</label></span>
+                    <span><input type="radio" name="gender" id="nonspecify" > 
+                        <label for="nonspecify">Not Specify</label></span>
+                </div>
+    
+                <a href="#sec2" class="next">
+                    Next
+                </a>
+    
+                <div class="pageNo">
+                    <span class="currentPage" style="font-size: 32px; opacity: 1;">.</span>
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </div>
+    
+            </div>
+            <div class="section sec2" id="sec2">
+                <h3>Contact Details</h3>
+                <label for="username" class="trn">Address</label>
+                <input type="textbox" id="address" required>
+    
+                <label for="dob" class="trn">Email</label>
+                <input type="email" name="email" id="email" required>
+    
+                <label for="dob" class="trn">Phone No.</label>
+                <input type="tel" name="phone" id="phone" value="+91 " required>
+    
+              
+                <a href="#sec1" class="back">
+                    Back
+                </a>
+    
+                <a href="#sec5" class="next">
+                    Next
+                </a>
+    
+                <div class="pageNo">
+                    <span>.</span>
+                    <span class="currentPage" style="font-size: 32px; opacity: 1;">.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </div>
+    
+            </div>
+    
+           
+    
+    
+            <div class="section sec5" id="sec5"> 
+              <div class="welcome"></div>
+              <img src="./tick.png" alt="">
+              <p>We can contact as soon as possible.....!</p>
+              <a href="#sec2" class="next">
+                Back
+            </a>
+            </div>
+            
+        </div>
+        </div>
+        
+        
+    </main>
+
+    
+</body>
+</html>
